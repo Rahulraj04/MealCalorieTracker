@@ -12,7 +12,7 @@ cd MealCalorieTracker/
 npm install
 npm start 
 
-###Directory Structure
+## Directory Structure
 bin/www --- All the server related settings are defined here such as which is the port number and app defenition etc
 
 config  ---All configuration related files are defined inside this folder to keep it separated and to make a modular structure
@@ -41,7 +41,7 @@ This is the main header file in which all header files are defined and even basi
 package.json 
 All necessary packages,3rd party libraries which are used in project are defined here and npm install uses this files for installation and even the project start script are defined here 
 
-##Api Endpoints 
+## Api Endpoints 
 base_Url = '{BaseUrl}:portNumber/' for eg in my case it is (http://localhost:8080)
  + '/register' -- registeration api 
 	       --required fields (email,password,role) Note: role can be only admin or user
@@ -77,10 +77,10 @@ base_Url = '{BaseUrl}:portNumber/' for eg in my case it is (http://localhost:808
 	    --on success(returns list of user registered)
 
 
-###Security
+## Security
 used JWT token for authentication and session management since it will reduce the load on server session management and it will be present on client side
 
-###Database and framework used
+### Database and framework used
 DB : MongoDB
 Framework : Express (NodeJs)
 
@@ -96,7 +96,7 @@ Red,green color change have incorporated in meal list itself not a different api
 Admin can do all CRUD opeartion on any records whereas user is only allowed to edit his/her valid records
 
 
-###Enhancements
+### Enhancements
 --Logger have to be added in it which will help to find the errors and logs etc (for eg Morgan Logger)
 
 --Authenticted Apis with apikey and secret key logic  using sha hash generation and payload encryption which will avoid middlelayer tampering for high security endpoints 
