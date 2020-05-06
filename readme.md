@@ -16,24 +16,24 @@ A meal record consist of 4 fields which are as follows
 + bin/www --- All the server related settings are defined here such as which is the port number and app defenition etc
 
 + config  ---All configuration related files are defined inside this folder to keep it separated and to make a modular structure
- + --database.js  --Db connection string and other static properties are defined here 
- + -- passport.js  -- passport js is user for authentication purpose in our case we have used it for signup and login module but in future if we wish to add facebook,gmail,github login it can be easily done using passport 
+ ...+ --database.js : Db connection string and other static properties are defined here 
+ ...+ -- passport.js : passport js is user for authentication purpose in our case we have used it for signup and login module but in future if we wish to add facebook,gmail,github login it can be easily done using passport 
 
 + controller -- All different Api controllers are defined inside here (we can define different controller as per urls such as indexController for '/' routes, userController for '/users' )
- + --indexController   --All index route api function are defined here for eg.(Login,Register,Users)
- helper  -- All controller related or any common generic methods are defined under this directory for easy to reuse
- + --responseHelper -- I have created a response helper file which will create the return result structure according to the type and criteria such as success,error etc
+ + --indexController : All index route api function are defined here for eg.(Login,Register,Users)
+ helper  : All controller related or any common generic methods are defined under this directory for easy to reuse
+ + --responseHelper : I have created a response helper file which will create the return result structure according to the type and criteria such as success,error etc
 
-+ database -- this folder consist of db realated files such as model ,dbhelper etc
- + models -- Contains all the Schemas used in this projects (For eg. User.js,Admin.js,MealREcords.js,DailyRecords.js)
- + helpers -- in this helper folder only those methods are defined which are related to db CRUD operations that to separated by models for eg userHelper contains only methods which are related to USER model
++ database : this folder consist of db realated files such as model ,dbhelper etc
+ + models : Contains all the Schemas used in this projects (For eg. User.js,Admin.js,MealREcords.js,DailyRecords.js)
+ + helpers : in this helper folder only those methods are defined which are related to db CRUD operations that to separated by models for eg userHelper contains only methods which are related to USER model
 
-+ routes -- all routing management and url definition are done here
- + --index.js -- all routes realted to '/'
- + middleware -- middleware is used for validation purpose and add it as middle layer before processing the request with logic 
++ routes : all routing management and url definition are done here
+ + --index.js : all routes realted to '/'
+ + middleware : middleware is used for validation purpose and add it as middle layer before processing the request with logic 
   it consist of various middleware methods such as isLoggedIn validation and form validation usage of middleware helps us to reduce the rewriting of same code and making it mode modular 
 
-+ env.sample -- its an sample environment file you can create your own environment file by .env and define all the properties given here 
++ env.sample : its an sample environment file you can create your own environment file by .env and define all the properties given here 
 
 + app.js 
 This is the main header file in which all header files are defined and even basic definition of the projects routes call ,session management and even the files which has to be loaded at start of application can be defined here (All starting points are defined here)
@@ -43,7 +43,7 @@ All necessary packages,3rd party libraries which are used in project are defined
 
 ## Api Endpoints 
 base_Url = '{BaseUrl}:portNumber/' for eg in my case it is (http://localhost:8080)
- + '/register' -- registeration api 
+ + '/register' : registeration api 
 	       --required fields (email,password,role) Note: role can be only admin or user
                -- validations(email validation,not empty, password should be minimum length 3)
  + '/login'     -- login api 
