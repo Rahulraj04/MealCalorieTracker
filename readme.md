@@ -13,7 +13,8 @@ A meal record consist of 4 fields which are as follows
 + npm start 
 
 ## Directory Structure
-+ bin/www --- All the server related settings are defined here such as which is the port number and app defenition etc
++ bin/www 
+⋅⋅⋅All the server related settings are defined here such as which is the port number and app defenition etc
 
 + config  ---All configuration related files are defined inside this folder to keep it separated and to make a modular structure
  ...+ --database.js : Db connection string and other static properties are defined here 
