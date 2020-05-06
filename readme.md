@@ -2,15 +2,15 @@
 
 MealCalorieTracker is a calorie tracking api in which user can add,edit and delete meal reords.
 A meal record consist of 4 fields which are as follows 
-1.Name (For eg BreakFast/Lunch/Dinner)
-2.Items (For eg Museli,Soup etc)
-3.Calorie (Number of calorie consumed in that particular meal)
-4.Date (On which date)
+1. Name (For eg BreakFast/Lunch/Dinner)
+2. Items (For eg Museli,Soup etc)
+3. Calorie (Number of calorie consumed in that particular meal)
+4. Date (On which date)
 
 ## Installation
-cd MealCalorieTracker/
-npm install
-npm start 
++ cd MealCalorieTracker/
++ npm install
++ npm start 
 
 ## Directory Structure
 + bin/www --- All the server related settings are defined here such as which is the port number and app defenition etc
@@ -78,7 +78,7 @@ base_Url = '{BaseUrl}:portNumber/' for eg in my case it is (http://localhost:808
 
 
 ## Security
-used JWT token for authentication and session management since it will reduce the load on server session management and it will be present on client side
+Used JWT token for authentication and session management since it will reduce the load on server session management and it will be present on client side
 
 ### Database and framework used
 + DB : MongoDB
@@ -99,4 +99,4 @@ Admin can do all CRUD opeartion on any records whereas user is only allowed to e
 ### Enhancements
 + --Logger have to be added in it which will help to find the errors and logs etc (for eg Morgan Logger)
 
-+ --Authenticted Apis with apikey and secret key logic  using sha hash generation and payload encryption which will avoid middlelayer tampering for high security endpoints 
++ --Authenticated Apis with apiKey and secretKey logic  using SHA256 Alogrithm hash generation and payload encryption which will avoid middlelayer tampering for high security endpoints 
