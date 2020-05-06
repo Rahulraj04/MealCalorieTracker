@@ -2,13 +2,13 @@
 
   
 
-**MealCalorieTracker** is a calorie tracking API in which user can add,edit and delete meal reords.
+**MealCalorieTracker** is a calorie tracking API in which user can add,edit and delete meal records.
 
 A meal record consist of 4 fields which are as follows:
 
 1. **Name** (For eg BreakFast/Lunch/Dinner)
 
-2. **Items** (For eg Museli,Soup etc)
+2. **Items** (For eg Muselis, Soup etc.)
 
 3. **Calorie** (Number of calorie consumed in that particular meal)
 
@@ -29,7 +29,7 @@ A meal record consist of 4 fields which are as follows:
 ## Directory Structure
 
 + **bin/www**
-   <pre> All the server related settings are defined here such as which is the port number and app defenition etc</pre>
+   <pre> All the server related settings are defined here such as which is the port number and app defenition etc.</pre>
 
   
 
@@ -37,23 +37,23 @@ A meal record consist of 4 fields which are as follows:
 
 >+  **database.js** : Db connection string and other static properties are defined here
 
->+ **passport.js** : passport js is user for authentication purpose in our case we have used it for signup and login module but in future if we wish to add facebook,gmail,github login it can be easily done using passport
+>+ **passport.js** : passport js is user for authentication purpose in our case we have used it for signup and login module but in future if we wish to add Facebook, Gmail, GitHub login it can be easily done using passport
 
   
 
 + **controller** <pre> All different Api controllers are defined inside here (we can define different controller as per urls such as indexController for '/' routes, userController for '/users' )</pre>
 
->+ **indexController.js** : All index route api function are defined here for eg.(Login,Register,Users)
+>+ **indexController.js** : All index route api function are defined here for e.g.(Login,Register,Users)
 
 + **helper** <pre> All controller related or any common generic methods are defined under this directory for easy to reuse</pre>
 
-> + **responseHelper.js** : I have created a response helper file which will create the return result structure according to the type and criteria such as success,error etc
+> + **responseHelper.js** : I have created a response helper file which will create the return result structure according to the type and criteria such as success,error etc.
 
   
 
-+ **database** <pre>this folder consist of db realated files such as model ,dbhelper etc</pre>
++ **database** <pre>this folder consist of db realated files such as model ,dbHelper etc.</pre>
 
->+ **models** : Contains all the Schemas used in this projects (For eg. User.js,Admin.js,MealREcords.js,DailyRecords.js)
+>+ **models** : Contains all the Schemas used in this projects (For e.g. User.js, Admin.js, MealRecords.js, DailyRecords.js)
 
 >+ **helpers** : in this helper folder only those methods are defined which are related to db CRUD operations that to separated by models for eg userHelper contains only methods which are related to USER model
 
@@ -114,7 +114,7 @@ base_Url = '{BaseUrl}:portNumber/' for eg in my case it is (http://localhost:808
 >3.  On success returns (returns list of meal records if any otherwise blank list also it contains color field which will give idea whether user daily limit has reached or not of that particular day so that it can be used in dashboard to show user the status)
 + **/create** : to add a meal record
 
->1. required fields (name,items,calorie,date and email*) *email this is only for admin user if he is trying to add a record he has to mention the email id of the user otherwise it will directly fetched from session token for logged in user
+>1. required fields (name,items,calorie,date and email*) *email this is only for admin user if he is trying to add a record he has to mention the email id of the user otherwise it will directly fetc.hed from session token for logged in user
 
 >2.  validations(name,items should not be empty ,calorie should be only number, date should be a valid date with format (mm-dd--yyyy))
 
@@ -159,7 +159,6 @@ Used **JWT** token for authentication and session management since it will reduc
 
 + Framework : Express (NodeJs)
 
-  
 
 ## Other Information
 
@@ -170,7 +169,7 @@ Used **JWT** token for authentication and session management since it will reduc
 
 ### Enhancements
 
-+ **Logger** have to be added in it which will help to find the errors and logs etc (for eg Morgan Logger)
++ **Logger** have to be added in it which will help to find the errors and logs etc. (for eg Morgan Logger)
 
   
 
