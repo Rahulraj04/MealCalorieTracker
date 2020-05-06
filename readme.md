@@ -84,7 +84,7 @@ used JWT token for authentication and session management since it will reduce th
 + DB : MongoDB
 + Framework : Express (NodeJs)
 
-###Other information
+## Other information
 I have tried to add or create all apis which will work for both user kind such as admin and user
 also have left option for enhancements such as i have kept admin and user has different schema so that both can have their on properties 
 
