@@ -51,7 +51,7 @@ A meal record consist of 4 fields which are as follows:
 
   
 
-+** database** <pre>this folder consist of db realated files such as model ,dbhelper etc</pre>
++ **database** <pre>this folder consist of db realated files such as model ,dbhelper etc</pre>
 
 >+ **models** : Contains all the Schemas used in this projects (For eg. User.js,Admin.js,MealREcords.js,DailyRecords.js)
 
@@ -161,7 +161,7 @@ Used **JWT** token for authentication and session management since it will reduc
 
   
 
-## Other information
+## Other Information
 
 1. I have tried to add or create all apis which will work for both user kind such as admin and user also have left option for enhancements such as i have kept admin and user has different schema so that both can have their on properties
 2. Tried to achieve a **modular** structure and also have added comments in all necessary area and logic params fields are added in helper method which will give an idea of datatype and parameters
